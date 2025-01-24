@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Carousel</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <style>
-    .carousel-inner .item {
-      text-align: center;
-      background-color: #555;
-      color: white;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item first-slide">
-        <div>First slide</div>
-      </div>
-      <div class="item active second-slide">
-        <div>Second slide</div>
-      </div>
-      <div class="item third-slide">
-        <div>Third slide</div>
-      </div>
-      <div class="item fourth-slide">
-        <div>Fourth slide</div>
-      </div>
-      <div class="item fifth-slide">
-        <div>Fifth slide</div>
-      </div>
+ <div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="first-slide carousel-item">
+      <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="d-block w-100" alt="...">
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="second-slide carousel-item">
+      <img src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-600nw-2212935531.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="third-slide carousel-item active">
+      <img src="https://t3.ftcdn.net/jpg/06/15/49/68/360_F_615496890_W34yB8VDE6n5pehb5QCt1ek5oEvRo9qA.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="fourth-slide carousel-item">
+      <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-waterfall-free-image.jpeg?w=600&quality=80" class="d-block w-100" alt="...">
+    </div>
+    <div class="fifth-slide carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5V-i2mjlcnF5h-HBDsqwn-KOOwfT_lWyDoNdKleNBC6Ici8l0KF21434gxdtm16s4dk&usqp=CAU" class="d-block w-100" alt="...">
+    </div>
   </div>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <button class="carousel-control-prev glyphicon-chevron-left carousel-control left" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next glyphicon-chevron-right carousel-control right" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
